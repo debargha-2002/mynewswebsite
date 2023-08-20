@@ -31,7 +31,7 @@ const Header = () => {
   }
 
   return (
-    <div className={`w-screen fixed top-0 z-10 left-0 py-2.5 shadow-md lg:bg-slate-300/80 lg:backdrop-blur bg-slate-300 ${!lightMode ? "text-white lg:bg-[#020202] bg-[#000000] shadow-slate-500" : ""}`}>
+    <div className={`w-screen fixed top-0 z-10 left-0 py-2.5 shadow-md lg:bg-slate-300/80 lg:backdrop-blur bg-slate-300 ${!lightMode ? "text-white lg:bg-[#000000] bg-[#090909] shadow-slate-500" : ""}`}>
 
       <nav className='flex xl:w-[90%] md:h-[15vh] lg:h-[17vh] flex-wrap mx-auto lg:w-[98.5%] md:w-[95%] h-[26vh] md:flex-row md:gap-y-0 flex-col gap-y-2 my-auto'>
         <div className='pl-2 md:my-auto md:h-[100%] h-[63%] xl:ml-0 lg:mx-auto xl:min-h-[100%] lg:max-h-[79%] md:ml-0 sm:mx-auto mx-auto my-auto'>
