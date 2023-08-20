@@ -46,7 +46,7 @@ const Header = () => {
             <p onClick={clickHandler} className={`${query === "sports" ? "text-blue-700" : `${lightMode ? " text-black" : " text-white"}`} cursor-pointer hover:text-blue-600 `}>Sports</p>
             <p onClick={clickHandler} className={`${query === "technology" ? "text-blue-700" : `${lightMode ? " text-black" : " text-white"}`} cursor-pointer hover:text-blue-600 `}>Technology</p>
           </div>
-          <div className={` lg:hidden flex flex-col fixed md:top-[18vh] top-[30vh] items-center w-screen left-0 font-semibold text-lg pb-10 bg-slate-100/75 backdrop-blur h-[55vh] gap-y-2 justify-center ${lightMode ? "" : " bg-[#414141d0]"} ${menu ? "hidden" : ""}`}>
+          <div className={` lg:hidden flex flex-col fixed md:top-[18vh] top-[30vh] items-center w-screen left-0 font-semibold text-lg pb-10 backdrop-blur h-[55vh] gap-y-2 justify-center ${lightMode ? "bg-slate-100/75" : " bg-[#414141d0]"} ${menu ? "hidden" : ""}`}>
             <p onClick={clickHandler} className={`${query === "general" ? "text-blue-700" : `${lightMode ? " text-black" : " text-white"}`}  cursor-pointer hover:text-blue-600 `}>General</p>
             <p onClick={clickHandler} className={`${query === "health" ? "text-blue-700" : `${lightMode ? " text-black" : " text-white"}`} cursor-pointer hover:text-blue-600 `}>Health</p>
             <p onClick={clickHandler} className={`${query === "science" ? "text-blue-700" : `${lightMode ? " text-black" : " text-white"}`} cursor-pointer hover:text-blue-600 `}>Science</p>
