@@ -10,14 +10,14 @@ const Card = ({ post }) => {
       <div className=' mx-auto py-3 px-2 flex flex-col'>
         <p className={` font-extrabold text-lg leading-[1.35rem] mb-2 ${lightMode ? "" : " text-[#ffffff]"}`}>{post.title}</p>
 
-        <p className={` text-sm font-semibold text-slate-800 ${lightMode ? "" : " text-gray-200"}`}>Published on: <span className={` text-slate-500 font-medium ${lightMode ? "" : " text-gray-300"}`}>{new Date(post.publishedAt).toLocaleString("en-IN", { hour12: true, timeStyle: "short", dateStyle: "medium" })}</span></p>
+        <p className={` text-sm font-semibold ${lightMode ? "text-slate-800" : " text-gray-200"}`}>Published on: <span className={`font-medium ${lightMode ? "text-slate-500" : " text-gray-300"}`}>{new Date(post.publishedAt).toLocaleString("en-IN", { hour12: true, timeStyle: "short", dateStyle: "medium" })}</span></p>
 
-        <p className={` text-sm font-semibold text-slate-800 -mt-[2px] ${lightMode ? "" : " text-gray-200"}`}>Source : <span className={` text-slate-500 font-medium ${lightMode ? "" : " text-gray-300"}`}>{post.source.name}</span></p>
+        <p className={` text-sm font-semibold -mt-[2px] ${lightMode ? "text-slate-800" : " text-gray-200"}`}>Source : <span className={` font-medium ${lightMode ? "text-slate-500" : " text-gray-300"}`}>{post.source.name}</span></p>
 
-        <p className={` font-semibold text-slate-600 mt-2 leading-5 mb-2 ${lightMode ? "" : " text-[#f7f3f3]"}`}>{post.description.split(" ").slice(0, 35).join(" ") + `...`}</p>
+        <p className={` font-semibold mt-2 leading-5 mb-2 ${lightMode ? "text-slate-600" : "text-[#e6e4e4]"}`}>{post.description.split(" ").slice(0, 35).join(" ") + `...`}</p>
 
         <a href={post.url} target='_blank'>
-          <button className={` bg-blue-600 px-5 py-2 rounded-md font-semibold text-white absolute bottom-4 hover:bg-blue-800 transition-colors duration-300 ${lightMode ? "" : " bg-[#45ADFF] hover:bg-blue-500"}`}>
+          <button className={` px-5 py-2 rounded-md font-semibold text-white absolute bottom-4 transition-colors duration-300 ${lightMode ? "bg-blue-600 hover:bg-blue-800 " : " bg-[#45ADFF] hover:bg-blue-500"}`}>
             Read more
           </button>
         </a>
